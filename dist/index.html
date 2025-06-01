@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-f775568b.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Casaia - Inmobiliaria inteligente en Madrid. Vende tu casa con procesos eficientes y comisiones mínimas gracias a la IA." />
+    <meta name="theme-color" content="#D4AF37" />
+    <title>Casaia - Inmobiliaria en Madrid</title>
+    <link rel="canonical" href="https://casaiamadrid.com/" />
+
+    <!-- Open Graph y Twitter -->
+    <meta property="og:title" content="Casaia - Inmobiliaria Inteligente en Madrid" />
+    <meta property="og:description" content="Vende tu casa con IA, procesos automatizados y comisiones conscientes. Solo en Casaia." />
+    <meta property="og:image" content="https://casaiamadrid.com/og-image.jpg" />
+    <meta property="og:url" content="https://casaiamadrid.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Casaia - Inmobiliaria Inteligente en Madrid" />
+    <meta name="twitter:description" content="Vende tu casa con IA, procesos automatizados y comisiones conscientes. Solo en Casaia." />
+    <meta name="twitter:image" content="https://casaiamadrid.com/og-image.jpg" />
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3YG7GJCLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R3YG7GJCLW');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1202288197809457');
+      fbq('track', 'PageView');
+    </script>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Casaia",
+      "url": "https://casaiamadrid.com",
+      "logo": "https://casaiamadrid.com/og-image.jpg",
+      "description": "Casaia es una inmobiliaria en Madrid que usa inteligencia artificial para ayudarte a vender con comisiones mínimas y procesos eficientes.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Madrid, España"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34 919932451",
+        "contactType": "Customer Service"
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-a1cc09c1.js"></script>
+    <link rel="stylesheet" href="/assets/index-d8d737ac.css">
+    <script type="module">
+window.onerror = (message, source, lineno, colno, errorObj) => {
+	window.parent.postMessage({
+		type: 'horizons-runtime-error',
+		message,
+		source,
+		lineno,
+		colno,
+		error: errorObj && errorObj.stack
+	}, '*');
+};
+</script>
+    <script type="module">
+const observer = new MutationObserver((mutations) => {
+	for (const mutation of mutations) {
+		for (const addedNode of mutation.addedNodes) {
+			if (
+				addedNode.nodeType === Node.ELEMENT_NODE &&
+				(
+					addedNode.tagName?.toLowerCase() === 'vite-error-overlay' ||
+					addedNode.classList?.contains('backdrop')
+				)
+			) {
+				handleViteOverlay(addedNode);
+			}
+		}
+	}
+});
+
+observer.observe(document.documentElement, {
+	childList: true,
+	subtree: true
+});
+
+function handleViteOverlay(node) {
+	if (!node.shadowRoot) {
+		return;
+	}
+
+	const backdrop = node.shadowRoot.querySelector('.backdrop');
+
+	if (backdrop) {
+		const overlayHtml = backdrop.outerHTML;
+		const parser = new DOMParser();
+		const doc = parser.parseFromString(overlayHtml, 'text/html');
+		const messageBodyElement = doc.querySelector('.message-body');
+		const fileElement = doc.querySelector('.file');
+		const messageText = messageBodyElement ? messageBodyElement.textContent.trim() : '';
+		const fileText = fileElement ? fileElement.textContent.trim() : '';
+		const error = messageText + (fileText ? ' File:' + fileText : '');
+
+		window.parent.postMessage({
+			type: 'horizons-vite-error',
+			error,
+		}, '*');
+	}
+}
+</script>
+    <script type="module">
+const originalConsoleError = console.error;
+console.error = function(...args) {
+	originalConsoleError.apply(console, args);
+
+	const errorString = args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : String(arg)).join(' ').toLowerCase();
+
+	window.parent.postMessage({
+		type: 'horizons-console-error',
+		error: errorString
+	}, '*');
+};
+</script>
+    <script type="module">
+const originalFetch = window.fetch;
+
+window.fetch = function(...args) {
+	const url = args[0] instanceof Request ? args[0].url : args[0];
+
+	// Skip WebSocket URLs
+	if (url.startsWith('ws:') || url.startsWith('wss:')) {
+		return originalFetch.apply(this, args);
+	}
+
+	return originalFetch.apply(this, args)
+		.then(async response => {
+			const contentType = response.headers.get('Content-Type') || '';
+
+			// Exclude HTML document responses
+			const isDocumentResponse =
+				contentType.includes('text/html') ||
+				contentType.includes('application/xhtml+xml');
+
+			if (!response.ok && !isDocumentResponse) {
+					const responseClone = response.clone();
+					const errorFromRes = await responseClone.text();
+					const requestUrl = response.url;
+					console.error(`Fetch error from ${requestUrl}: ${errorFromRes}`);
+			}
+
+			return response;
+		})
+		.catch(error => {
+			if (!url.match(/.html?$/i)) {
+				console.error(error);
+			}
+
+			throw error;
+		});
+};
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+
+    <!-- ✅ Noscript del Meta Pixel: debe ir en <body> -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1202288197809457&ev=PageView&noscript=1" />
+    </noscript>
+  </body>
+</html>
