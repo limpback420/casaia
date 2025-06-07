@@ -1,0 +1,7 @@
+{
+  "nodes": [
+    { "id": 1, "type": "webhook", "parameters": { "path": "generateStory" } },
+    { "id": 2, "type": "httpRequest", "parameters": { "url": "https://api.openai.com" } }
+  ],
+  "connections": {}
+}
